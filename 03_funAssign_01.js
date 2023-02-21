@@ -40,8 +40,8 @@ function swapValuesDude(dude1, dude2){
   dude1 = dude2;
   dude2 = temp;
 
-  console.log('before swap values of dude1 is:', dude1);  
-  console.log('before swap values of dude2 is:', dude2);  
+  console.log('After swap values of dude1 is:', dude1);  
+  console.log('After swap values of dude2 is:', dude2);  
 }
 
 swapValuesDude('Virat', 'Anushka');
