@@ -69,7 +69,7 @@ console.log(greet.slice(2, 8));
 console.log("split() method");
 var greet = "Good Morning";
 var splitResult = greet.split(" ");
-console.log(splitResult);
+console.log('splitResult', splitResult);
 
 console.log(typeof splitResult);
 
