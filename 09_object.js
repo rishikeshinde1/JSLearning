@@ -6,14 +6,21 @@ let student = {
     age:32,
     id:32423,
     address : {
+        street:"Ganesh Nagar",
         city:"Pune",
         pin:412001
     },
     friends:["Steve", "Elon", "Bill"],
     show: function(){
         console.log("I am show() function");
-    }
-}
+    },
+    addressDetails: function(){
+        return `Address is: Street: ${this.address.street}, City: ${this.address.city}, PIN: ${this.address.PIN}`
+     }
+};
+
+let resultAddress = student.addressDetails();
+console.log(resultAddress);
 
 
 student.marks = {
