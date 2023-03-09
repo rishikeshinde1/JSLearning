@@ -22,5 +22,33 @@ var countVovels = function (str) {
   return count;
 };
 
-var result = countVovels("I love my India");
+var result = countVovels("Javascript is the language of internet");
 console.log(`number of vowels in the string are ${result}`);
+
+var result = countVovels("I am angular developer");
+console.log(`number of vowels in the string are ${result}`);
+
+var result = countVovels("Hardwork and commitment is the key off success");
+console.log(`number of vowels in the string are ${result}`);
+
+
+function lastWordCharscount(str){
+
+var words = str.split(" ");
+
+var lastWord = words[words.length - 1];
+console.log(lastWord);
+console.log(lastWord.length);
+return charCount = lastWord.length;
+}
+
+var result = lastWordCharscount("Javascript is the language of internet");
+console.log(`total number of character available in last word : ${result}`);
+
+var result = lastWordCharscount("I am angular developer");
+console.log(`total number of character available in last word : ${result}`);
+
+var result = lastWordCharscount("Hardwork and commitment is the key off success");
+console.log(`total number of character available in last word : ${result}`);
+
+
