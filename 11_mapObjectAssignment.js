@@ -15,17 +15,29 @@ const kotak_bank = new Bank("Kotak Bank", "Ganesh Nagar", 897243924, "KOTAK78612
 const hdfc_bank = new Bank("HDFC Bank", "Sinhgad Road", 6778643924, "HDFC09097", 8.7);
 const punjab_bank = new Bank("Punjab Bank", "Wakad", 34543924, "PUNB67097", 9.7);
 
-const setOfBanks = new Set();
-setOfBanks.add(axis_bank);
-setOfBanks.add(sbi_bank);
-setOfBanks.add(icici_bank);
-setOfBanks.add(kotak_bank);
-setOfBanks.add(hdfc_bank);
-setOfBanks.add(punjab_bank);
-let i = 0;
-for (const bank of setOfBanks) {
-    console.log(`Name of Bank : ${bank.bank_name} --|-- Location : ${bank.location}`);
-    //console.log();
-    //i++;
+const mapOfBanks = new Map();
+mapOfBanks.set("12313419012", axis_bank);
+mapOfBanks.set("232342321", sbi_bank);
+mapOfBanks.set("34343667", icici_bank);
+mapOfBanks.set("897243924", kotak_bank);
+mapOfBanks.set("6778643924", hdfc_bank);
+mapOfBanks.set("34543924", punjab_bank);
+
+let keysMap = mapOfBanks.keys();
+
+for (let key of keysMap) {
+    console.log(key, mapOfBanks.get(key));
 }
+//console.log(mapOfBanks.axis_bank.accout_no);
+
+
+console.log(`mapOfBanks size is : ${mapOfBanks.size}`); 
+
+
+
+for(const key of keysMap) 
+{ 
+    console.log(mapOfBanks.get(key));
+}
+
 
